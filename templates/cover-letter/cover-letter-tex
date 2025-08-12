@@ -1,0 +1,26 @@
+\documentclass{cover-letter}
+
+\begin{document}
+
+\letterheader{Your Name}
+    {\email{your.email@example.com}}
+    {\phone{(555) 555-5555}}
+
+\recipient{Hiring Manager}
+    {Company Name}
+    {123 Company Street}
+    {City, State 12345}
+
+\letteropening{Hiring Manager}
+
+I am writing to express my strong interest in the [Position] role at [Company Name], as advertised on your company website. With my background in [relevant field] and experience in [specific skills], I am confident in my ability to contribute significantly to your team.
+
+[Second paragraph: Describe your relevant experience and skills]
+
+[Third paragraph: Why you want to work for this company specifically]
+
+[Fourth paragraph: Call to action and thank you]
+
+\letterclosing{Your Name}
+
+\end{document}
