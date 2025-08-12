@@ -1,10 +1,33 @@
-\documentclass{~/templates/resume/ats-resume}
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+
+% Simple section formatting
+\titleformat{\section}
+    {\large\bfseries}
+    {}{0em}
+    {}
+\titlespacing{\section}{0pt}{12pt}{6pt}
+
+% Custom commands
+\newcommand{\name}[1]{%
+    \begin{center}
+        {\Large\bfseries #1}
+    \end{center}
+}
+
+\newcommand{\contactline}[4]{%
+    \begin{center}
+        #1 $\bullet$ #2\\
+        #3 $\bullet$ #4
+    \end{center}
+}
 
 \begin{document}
 
-% Contact Information - Avoiding headers/footers
 \name{John Smith}
-\contactinfo{Email: john.smith@email.com}{Phone: (555) 555-5555}
+\contactline{Email: john.smith@email.com}{Phone: (555) 555-5555}
 {Location: New York, NY}{LinkedIn: linkedin.com/in/johnsmith}
 
 \section{Professional Summary}
@@ -12,51 +35,53 @@ Results-driven Software Engineer with 5+ years of experience in full-stack devel
 
 \section{Professional Experience}
 
-\workexperience{Senior Software Engineer}{TechCorp Solutions}{January 2023 - Present}{
-\begin{achievements}
+\textbf{Senior Software Engineer} \hfill January 2023 - Present\\
+\textbf{TechCorp Solutions}
+\begin{itemize}
     \item Developed and maintained enterprise-level applications using JavaScript (React.js) and Python (Django), resulting in 30\% improvement in application performance
     \item Implemented Continuous Integration and Continuous Deployment (CI/CD) pipelines using Jenkins and Docker, reducing deployment time by 40\%
     \item Led a team of 5 developers in modernizing legacy systems, resulting in 25\% reduction in maintenance costs
     \item Collaborated with cross-functional teams to deliver features aligned with business requirements
-\end{achievements}
-}
+\end{itemize}
 
-\workexperience{Software Engineer}{Innovation Systems}{June 2020 - December 2022}{
-\begin{achievements}
+\textbf{Software Engineer} \hfill June 2020 - December 2022\\
+\textbf{Innovation Systems}
+\begin{itemize}
     \item Designed and implemented RESTful APIs using Node.js and Express.js, serving 100,000+ daily active users
     \item Utilized PostgreSQL and MongoDB for efficient data management and retrieval
     \item Implemented automated testing frameworks reducing bug detection time by 50\%
     \item Mentored junior developers in software development best practices and Agile methodologies
-\end{achievements}
-}
+\end{itemize}
 
 \section{Technical Skills}
 
-\skillcategory{Programming Languages}{Python, JavaScript, TypeScript, Java, SQL}
-\skillcategory{Frameworks \& Libraries}{React.js, Node.js, Django, Express.js, Spring Boot}
-\skillcategory{Database Technologies}{PostgreSQL, MongoDB, Redis, MySQL}
-\skillcategory{Development Tools}{Git, Docker, Jenkins, Kubernetes, AWS}
-\skillcategory{Methodologies}{Agile, Scrum, Test-Driven Development (TDD), DevOps}
+\textbf{Programming Languages:} Python, JavaScript, TypeScript, Java, SQL\\
+\textbf{Frameworks \& Libraries:} React.js, Node.js, Django, Express.js, Spring Boot\\
+\textbf{Database Technologies:} PostgreSQL, MongoDB, Redis, MySQL\\
+\textbf{Development Tools:} Git, Docker, Jenkins, Kubernetes, AWS\\
+\textbf{Methodologies:} Agile, Scrum, Test-Driven Development (TDD), DevOps
 
 \section{Education}
 
-\educationentry{Bachelor of Science in Computer Science}{State University}{Graduated: May 2020}{GPA: 3.8/4.0}
+\textbf{Bachelor of Science in Computer Science}\\
+State University \hfill Graduated: May 2020\\
+GPA: 3.8/4.0
 
 \section{Certifications}
-\begin{achievements}
+\begin{itemize}
     \item AWS Certified Solutions Architect - Associate
     \item Professional Scrum Master (PSM) I
     \item MongoDB Certified Developer
-\end{achievements}
+\end{itemize}
 
 \section{Projects}
 
-\workexperience{E-commerce Platform Modernization}{Technical Lead}{2022}{
-\begin{achievements}
+\textbf{E-commerce Platform Modernization} \hfill 2022\\
+\textbf{Technical Lead}
+\begin{itemize}
     \item Led the modernization of a legacy e-commerce platform serving 50,000+ customers
     \item Implemented microservices architecture using Node.js and Docker
     \item Achieved 99.9\% system uptime and 40\% improvement in page load times
-\end{achievements}
-}
+\end{itemize}
 
 \end{document}
