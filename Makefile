@@ -2,11 +2,12 @@
 
 # Directories
 CONTENT_DIR = content
+TEMPLATE_DIR = templates
 OUTPUT_DIR = output
 PDF_DIR = $(OUTPUT_DIR)/pdf
 TEXT_DIR = $(OUTPUT_DIR)/text
-RESUME_DIR = $(CONTENT_DIR)/resume
-LETTER_DIR = $(CONTENT_DIR)/cover-letter
+RESUME_DIR = $(TEMPLATE_DIR)/resume
+LETTER_DIR = $(TEMPLATE_DIR)/cover-letter
 
 # LaTeX compiler and options
 LATEX = pdflatex
