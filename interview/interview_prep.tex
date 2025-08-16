@@ -1,0 +1,42 @@
+\documentclass[12pt]{article}
+
+\input{interview/packages}
+\input{interview/style}
+
+% You can add an extra speaker using:
+% \setspeaker{SpeakerCommand}[Speaker Name] 
+% Usage: "\SpeakerCommand This is what they said..." 
+
+\setinterviewee{Nestor}{R}{PenguinOps}{PenguinOps@example.com}
+
+\setinterviewer{Jane}{Doe}{Organisation}{jane@example.com}
+
+\renewcommand{\interviewdate}{\today}
+
+\renewcommand{\interviewcontext}{
+    \textbf{Context:} This is a template interview.
+}
+
+\renewcommand{\interviewcontent}{
+    \Qu Why are you interested in this job and our company?
+    \An I was drawn to MSD's direction set out in Te Pae Tawhiti, especially Mana manaaki.
+    I value the emphasis on dignity and warmth when working with people. Even in technical
+    roles such as a Data Scientist.
+    Data science isn't just about numbers; it's about telling stories that improve lives.
+    MSD's focus on supporting whānau and our most vulnerable communities really resonates
+    with me — especially through Mana manaaki.}
+
+\renewcommand{\interviewcontent}{
+    \Qu What are your short-term and long-term goals?
+    \An In the short term, I want to bring value to a programme like Te Pae Tawhiti by building 
+    trusted, actionable insights. In the long term, I hope to step into a more senior technical
+    lead role where I can support joined-up work across government agencies, especially in areas
+    impacting social wellbeing.}
+
+\renewcommand{\interviewcontent}{
+    \Qu What does teamwork mean to you?
+    \An To me, teamwork is about mutual respect, listening, and being open to other perspectives.
+     It's also about accountability — doing your part so others can do theirs.
+    My best work happens in teams where we're honest, transparent, and united by a shared goal.}
+
+\input{interview/full}
