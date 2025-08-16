@@ -1,6 +1,6 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{ats-resume}[2025/08/12 ATS-Friendly Resume Class]
-\LoadClass[11pt,letterpaper]{article}
+\LoadClass[12pt,letterpaper]{article}
 
 % Required packages - keeping it minimal for ATS compatibility
 \RequirePackage[margin=1in]{geometry}
